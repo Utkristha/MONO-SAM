@@ -1,0 +1,216 @@
+Resumed from epoch 1, best IoU so far: 0.7286
+
+============================================================
+Epoch [2/20]
+============================================================
+
+  0%|          | 6/1250 [00:15<53:47,  2.59s/it, depth=2.0000, grad=6.45, loss=0.1382, seg=0.1362]  
+
+sam.mask_decoder.transformer.layers.1.cross_attn_token_to_image.k_proj.weight: grad=1.02
+sam.mask_decoder.transformer.layers.1.cross_attn_image_to_token.v_proj.weight: grad=1.37
+sam.mask_decoder.transformer.final_attn_token_to_image.k_proj.weight: grad=3.71
+depth_proj.proj.0.weight: grad=3.84
+fusion_layer.fusion_transformer.transformer.layers.0.linear2.weight: grad=1.16
+fusion_layer.fusion_transformer.transformer.layers.1.linear2.weight: grad=1.00
+fusion_layer.output_conv.weight: grad=1.78
+---
+
+100%|██████████| 1250/1250 [55:21<00:00,  2.66s/it, depth=2.0000, grad=13.25, loss=0.2239, seg=0.2219]  
+
+  Max grad this epoch: 1452.25
+
+                                                             
+
+Train → loss: 0.8713 | seg: 0.8693 | depth: 2.0000
+Val   → loss: 0.9754   | IoU: 0.7766
+  ✓ Saved best model (IoU: 0.7766)
+  ✓ Saved checkpoint epoch 2
+
+============================================================
+Epoch [3/20]
+============================================================
+
+  0%|          | 6/1250 [00:15<53:56,  2.60s/it, depth=2.0000, grad=50.39, loss=1.9473, seg=1.9453]
+
+sam.mask_decoder.transformer.layers.0.cross_attn_image_to_token.v_proj.weight: grad=1.78
+sam.mask_decoder.transformer.layers.0.cross_attn_image_to_token.out_proj.weight: grad=2.35
+sam.mask_decoder.transformer.layers.1.self_attn.v_proj.weight: grad=1.30
+sam.mask_decoder.transformer.layers.1.self_attn.out_proj.weight: grad=1.03
+sam.mask_decoder.transformer.layers.1.cross_attn_token_to_image.v_proj.weight: grad=1.87
+sam.mask_decoder.transformer.layers.1.cross_attn_token_to_image.out_proj.weight: grad=2.61
+sam.mask_decoder.transformer.layers.1.mlp.lin1.weight: grad=3.01
+sam.mask_decoder.transformer.layers.1.mlp.lin2.weight: grad=2.21
+sam.mask_decoder.transformer.layers.1.cross_attn_image_to_token.v_proj.weight: grad=12.67
+sam.mask_decoder.transformer.layers.1.cross_attn_image_to_token.out_proj.weight: grad=3.11
+sam.mask_decoder.transformer.final_attn_token_to_image.k_proj.weight: grad=16.33
+sam.mask_decoder.transformer.final_attn_token_to_image.v_proj.weight: grad=2.79
+sam.mask_decoder.transformer.final_attn_token_to_image.out_proj.weight: grad=2.33
+sam.mask_decoder.output_upscaling.0.weight: grad=9.47
+sam.mask_decoder.output_upscaling.0.bias: grad=1.20
+sam.mask_decoder.output_upscaling.1.weight: grad=1.93
+sam.mask_decoder.output_upscaling.1.bias: grad=2.19
+sam.mask_decoder.output_upscaling.3.weight: grad=27.34
+sam.mask_decoder.output_upscaling.3.bias: grad=17.02
+sam.mask_decoder.output_hypernetworks_mlps.0.layers.0.weight: grad=3.39
+sam.mask_decoder.output_hypernetworks_mlps.0.layers.1.weight: grad=4.11
+sam.mask_decoder.output_hypernetworks_mlps.0.layers.2.weight: grad=17.18
+depth_proj.proj.0.weight: grad=20.62
+fusion_layer.fusion_transformer.transformer.layers.0.self_attn.in_proj_weight: grad=4.94
+fusion_layer.fusion_transformer.transformer.layers.0.self_attn.out_proj.weight: grad=4.01
+fusion_layer.fusion_transformer.transformer.layers.0.linear1.weight: grad=3.29
+fusion_layer.fusion_transformer.transformer.layers.0.linear2.weight: grad=4.85
+fusion_layer.fusion_transformer.transformer.layers.1.self_attn.in_proj_weight: grad=4.85
+fusion_layer.fusion_transformer.transformer.layers.1.self_attn.out_proj.weight: grad=2.01
+fusion_layer.fusion_transformer.transformer.layers.1.linear1.weight: grad=2.08
+fusion_layer.fusion_transformer.transformer.layers.1.linear2.weight: grad=3.52
+fusion_layer.output_conv.weight: grad=6.27
+---
+
+100%|██████████| 1250/1250 [54:03<00:00,  2.60s/it, depth=2.0000, grad=3.67, loss=0.2428, seg=0.2408]   
+
+  Max grad this epoch: 3653.24
+
+                                                             
+
+Train → loss: 0.7093 | seg: 0.7073 | depth: 2.0000
+Val   → loss: 0.6082   | IoU: 0.8110
+  ✓ Saved best model (IoU: 0.8110)
+  ✓ Saved checkpoint epoch 3
+
+============================================================
+Epoch [4/20]
+============================================================
+
+  0%|          | 6/1250 [00:15<54:18,  2.62s/it, depth=2.0000, grad=38.92, loss=0.3194, seg=0.3174]
+
+sam.mask_decoder.transformer.layers.1.cross_attn_image_to_token.v_proj.weight: grad=2.90
+sam.mask_decoder.transformer.final_attn_token_to_image.q_proj.weight: grad=1.64
+sam.mask_decoder.transformer.final_attn_token_to_image.k_proj.weight: grad=35.77
+sam.mask_decoder.output_upscaling.0.weight: grad=1.02
+sam.mask_decoder.output_upscaling.3.weight: grad=2.09
+sam.mask_decoder.output_hypernetworks_mlps.0.layers.2.weight: grad=1.46
+depth_proj.proj.0.weight: grad=13.55
+fusion_layer.fusion_transformer.transformer.layers.0.self_attn.in_proj_weight: grad=2.58
+fusion_layer.fusion_transformer.transformer.layers.0.self_attn.out_proj.weight: grad=1.22
+fusion_layer.fusion_transformer.transformer.layers.0.linear1.weight: grad=2.11
+fusion_layer.fusion_transformer.transformer.layers.0.linear2.weight: grad=2.25
+fusion_layer.fusion_transformer.transformer.layers.1.self_attn.in_proj_weight: grad=2.37
+fusion_layer.output_conv.weight: grad=1.83
+---
+
+100%|██████████| 1250/1250 [53:58<00:00,  2.59s/it, depth=2.0000, grad=0.93, loss=0.0967, seg=0.0947]   
+
+  Max grad this epoch: 2649.25
+
+                                                             
+
+Train → loss: 0.6406 | seg: 0.6386 | depth: 2.0000
+Val   → loss: 0.6278   | IoU: 0.8582
+  ✓ Saved best model (IoU: 0.8582)
+  ✓ Saved checkpoint epoch 4
+
+============================================================
+Epoch [5/20]
+============================================================
+
+  0%|          | 6/1250 [00:15<53:28,  2.58s/it, depth=2.0000, grad=1.67, loss=0.1120, seg=0.1100]  
+
+---
+
+100%|██████████| 1250/1250 [54:01<00:00,  2.59s/it, depth=2.0000, grad=21.14, loss=0.5308, seg=0.5288]  
+
+  Max grad this epoch: 4054.04
+
+                                                             
+
+Train → loss: 0.6076 | seg: 0.6056 | depth: 2.0000
+Val   → loss: 0.6048   | IoU: 0.8541
+  ✓ Saved checkpoint epoch 5
+
+============================================================
+Epoch [6/20]
+============================================================
+
+  0%|          | 6/1250 [00:15<53:43,  2.59s/it, depth=2.0000, grad=112.41, loss=0.4029, seg=0.4009] 
+
+sam.mask_decoder.transformer.layers.1.cross_attn_token_to_image.v_proj.weight: grad=1.25
+sam.mask_decoder.transformer.layers.1.cross_attn_token_to_image.out_proj.weight: grad=1.32
+sam.mask_decoder.transformer.layers.1.mlp.lin1.weight: grad=1.48
+sam.mask_decoder.transformer.layers.1.mlp.lin2.weight: grad=1.05
+sam.mask_decoder.transformer.layers.1.cross_attn_image_to_token.v_proj.weight: grad=7.29
+sam.mask_decoder.transformer.layers.1.cross_attn_image_to_token.out_proj.weight: grad=1.31
+sam.mask_decoder.transformer.final_attn_token_to_image.q_proj.weight: grad=1.46
+sam.mask_decoder.transformer.final_attn_token_to_image.k_proj.weight: grad=101.59
+sam.mask_decoder.transformer.final_attn_token_to_image.v_proj.weight: grad=1.80
+sam.mask_decoder.transformer.final_attn_token_to_image.out_proj.weight: grad=1.26
+sam.mask_decoder.output_upscaling.0.weight: grad=2.23
+sam.mask_decoder.output_upscaling.3.weight: grad=4.45
+sam.mask_decoder.output_upscaling.3.bias: grad=3.20
+sam.mask_decoder.output_hypernetworks_mlps.0.layers.0.weight: grad=1.52
+sam.mask_decoder.output_hypernetworks_mlps.0.layers.1.weight: grad=1.63
+sam.mask_decoder.output_hypernetworks_mlps.0.layers.2.weight: grad=3.61
+depth_proj.proj.0.weight: grad=43.41
+depth_proj.proj.1.weight: grad=1.39
+depth_proj.proj.1.bias: grad=1.29
+fusion_layer.fusion_transformer.transformer.layers.0.self_attn.in_proj_weight: grad=8.26
+fusion_layer.fusion_transformer.transformer.layers.0.self_attn.out_proj.weight: grad=4.04
+fusion_layer.fusion_transformer.transformer.layers.0.linear1.weight: grad=6.19
+fusion_layer.fusion_transformer.transformer.layers.0.linear2.weight: grad=6.75
+fusion_layer.fusion_transformer.transformer.layers.1.self_attn.in_proj_weight: grad=8.86
+fusion_layer.fusion_transformer.transformer.layers.1.self_attn.out_proj.weight: grad=2.07
+fusion_layer.fusion_transformer.transformer.layers.1.linear1.weight: grad=2.49
+fusion_layer.fusion_transformer.transformer.layers.1.linear2.weight: grad=2.86
+fusion_layer.output_conv.weight: grad=5.67
+---
+
+100%|██████████| 1250/1250 [54:02<00:00,  2.59s/it, depth=2.0000, grad=2.58, loss=0.1074, seg=0.1054]  
+
+  Max grad this epoch: 2558.85
+
+                                                             
+
+Train → loss: 0.4991 | seg: 0.4971 | depth: 2.0000
+Val   → loss: 0.9375   | IoU: 0.8590
+  ✓ Saved best model (IoU: 0.8590)
+  ✓ Saved checkpoint epoch 6
+
+============================================================
+Epoch [7/20]
+============================================================
+
+  0%|          | 6/1250 [00:15<53:36,  2.59s/it, depth=2.0000, grad=2.03, loss=0.1398, seg=0.1378]  
+
+depth_proj.proj.0.weight: grad=1.34
+---
+
+100%|██████████| 1250/1250 [54:03<00:00,  2.59s/it, depth=2.0000, grad=2.36, loss=0.1742, seg=0.1722]   
+
+  Max grad this epoch: 2293.73
+
+                                                             
+
+Train → loss: 0.4544 | seg: 0.4524 | depth: 2.0000
+Val   → loss: 0.4708   | IoU: 0.8855
+  ✓ Saved best model (IoU: 0.8855)
+  ✓ Saved checkpoint epoch 7
+
+============================================================
+Epoch [8/20]
+============================================================
+
+  0%|          | 6/1250 [00:15<53:46,  2.59s/it, depth=2.0000, grad=4.43, loss=0.1422, seg=0.1402] 
+
+sam.mask_decoder.transformer.final_attn_token_to_image.k_proj.weight: grad=2.27
+depth_proj.proj.0.weight: grad=3.20
+---
+
+100%|██████████| 1250/1250 [54:06<00:00,  2.60s/it, depth=2.0000, grad=0.69, loss=0.0527, seg=0.0507]   
+
+  Max grad this epoch: 2017.56
+
+                                                             
+
+Train → loss: 0.4433 | seg: 0.4413 | depth: 2.0000
+Val   → loss: 0.3693   | IoU: 0.8939
+  ✓ Saved best model (IoU: 0.8939)
+  ✓ Saved checkpoint epoch 8

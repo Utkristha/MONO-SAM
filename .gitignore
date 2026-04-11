@@ -5,3 +5,5 @@ Depth-Anything-V2/
 Depth-Anything-V2/depth_anything_v2/
 *.pth
 test.*
+Backend/
+Frontend/

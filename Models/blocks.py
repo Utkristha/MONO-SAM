@@ -106,7 +106,7 @@ class DepthDecoder(nn.Module):
             nn.ReLU()
         )
 
-    def forward(self, fused, skip, target_size=(480, 640)):
+    def forward(self, fused, skip, target_size=(240, 320)):
         x = torch.cat([fused, skip], dim=1)                              # [B, 512, 64, 64]
         x = self.decoder(x)                                              # [B, 1, 64, 64]
         x = F.interpolate(x, size=target_size, mode='bilinear', align_corners=False)
